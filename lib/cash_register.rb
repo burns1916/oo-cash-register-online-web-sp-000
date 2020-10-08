@@ -39,7 +39,7 @@ class CashRegister
     if @quantity != 0
     @total -= @price*@quantity
   else
-    @toatl -= @price
+    @total -= @price
   end
 
 end
