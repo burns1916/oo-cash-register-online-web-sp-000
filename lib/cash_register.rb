@@ -14,11 +14,12 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 0)
-    @item_array << item.split("")*quantity
     if quantity != 0
       self.total += price*quantity
+      @item_array << item*quantity
     else
       self.total += price
+      @item_array << item
     end
   end
 
