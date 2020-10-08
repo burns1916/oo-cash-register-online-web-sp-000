@@ -12,6 +12,7 @@ class CashRegister
 
   def add_item(item, price, quantity = 0)
     @price = price
+    @quantity = quantity
     if quantity != 0
       self.total += price*quantity
       @item_array << item.split(",")*quantity
@@ -35,7 +36,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total -= @price
+    @total -= @price*@quantity
   end
 
 end
