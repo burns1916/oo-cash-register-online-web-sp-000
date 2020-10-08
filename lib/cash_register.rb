@@ -10,7 +10,7 @@ class CashRegister
   end
 
   def discount
-    @discount = 20
+    @discount
   end
 
   def add_item(item, price, quantity = 0)
@@ -38,7 +38,7 @@ class CashRegister
   end
 
   def void_last_transaction
-
+    
 
   end
 
