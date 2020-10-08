@@ -33,7 +33,7 @@ class CashRegister
   end
 
   def items
-    @item_array
+    @item_array.join
   end
 
 end
