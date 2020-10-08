@@ -36,7 +36,10 @@ class CashRegister
   end
 
   def void_last_transaction
+    if @quantity != 0
     @total -= @price*@quantity
+  else
+    @toatl -= @price
   end
 
 end
