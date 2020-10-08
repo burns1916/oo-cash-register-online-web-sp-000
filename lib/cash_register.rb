@@ -12,8 +12,8 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 0)
-    item_array = []
-    item_array << item
+    @item_array = []
+    @item_array << item
     if quantity != 0
       self.total += price*quantity
     else
@@ -31,7 +31,7 @@ class CashRegister
   end
 
   def items
-    item_array
+    @item_array
   end
 
 end
