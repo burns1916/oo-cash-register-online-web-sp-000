@@ -33,7 +33,7 @@ class CashRegister
   end
 
   def items
-    @item_array.join.split(",")
+    @item_array.split(",")
   end
 
 end
